@@ -3,10 +3,10 @@
 <div style="background-color:#e9eaed;">
     <h1>Edit Post</h1>
     <form action="/wall/edit_complete" method="post">
-        <input type="hidden" name="id" value="%<= @post_edit.id %>">
+        <input type="hidden" name="id" value="<%= @posts_edit.id %>">
         Name: <input type="text" name="writer_edit" value="<%=@posts_edit.name %>"><br>
         Content: <br>
-        <textarea name="cotent_edit" cols="40" rows="5"><%= @posts_edit.content %>    
+        <textarea name="content_edit" cols="40" rows="5"><%= @posts_edit.content %>    
         </textarea>
         <input type="submit" value="edit">
 
