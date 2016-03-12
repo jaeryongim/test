@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post "wall/edit_complete"
   get "wall/delete/:id" => 'wall#delete'
   post "wall/delete_complete"
+  get "wall/wrtie_comment/:id" => 'wall#write_comment'
   
   
   # The priority is based upon order of creation: first created -> highest priority.
