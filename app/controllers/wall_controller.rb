@@ -31,7 +31,7 @@ class WallController < ApplicationController
   end
   
   def delete
-    @posts_delete = Post.find(params[:id])
+    @post_delete = Post.find(params[:id])
   end
   
   def delete_complete
@@ -39,6 +39,10 @@ class WallController < ApplicationController
     p.destroy
     
     redirect_to "/wall/posts"
+  end
+  
+  def write_comment
+    @post_comment = Post.find(params[:id])
   end
   
   def posts
