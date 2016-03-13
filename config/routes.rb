@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  #user
   get "user/signup"
   post "user/signup_complete"
-
+  get "user/login"
+  
+  #wall
   get "wall/write"
   post "wall/write_complete"
   get "wall/posts"
