@@ -3,7 +3,7 @@ class UserController < ApplicationController
   end
   
   def signup_complete
-    u = User.name
+    u = User.new
     u.username = params[:username]
     
     if params[:password] == params[:retype_password]
