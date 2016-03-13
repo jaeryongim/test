@@ -1,0 +1,12 @@
+<h4><%= flash[:alert] %></h4>
+
+<div style="background-color:#e9eaed;">
+    <h1>Comment Edit Post</h1>
+    <form action="/wall/comment_edit_complete" method="post">
+        <input type="hidden" name="id" value="<%= @comment_edit.id %>">
+        Name: <input type="text" name="writer_edit" value="<%=@comment_edit.name %>"><br>
+        Content:<br>
+        <textarea name="content_edit" cols="40"><%= @comment_edit.content %></textarea>
+        <input type="submit" value="edit">
+    </form>
+</div>
